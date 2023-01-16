@@ -302,7 +302,7 @@ def read_data(file_name):
     :return: points, labels
     """
 
-    data_folder = Path("/Ex3/data/")
+    data_folder = Path("./data")
     file_to_open = data_folder / file_name
 
     points = []

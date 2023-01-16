@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import numpy as np
 
 
@@ -29,34 +31,31 @@ def knn(type_distance: int, k: int, p: (float, float, float), data: [(float, flo
     distances = []
     for point in data:
         distances.append(lp_dist(type_distance, p, point))
-    distances = np.array(distances)
-    labels = np.array([point[2] for point in data])
-    sorted_distances = np.argsort(distances)
-    labels = labels[sorted_distances]
-    labels = labels[:k]
-    return np.argmax(np.bincount(labels))
+    return np.bincount(np.array(distances).argsort()[:k]).argmax()
 
 
 # reads ./data/haberman.data and returns a list of points and a list of labels
-def read_date(path: str) -> ([(float, float, float)], [int]):
+def read_date(file_name: str) -> ([(float, float, float)], [int]):
     """
-    :param path: path to file
+    :param file_name: path to file
     :return: list of points and list of labels
     """
-    p = []
-    l = []
-    with open(path, 'r') as file:
+    data_folder = Path("./data")
+    file_to_open = data_folder / file_name
+    pi = []
+    li = []
+    with open(file_to_open, 'r') as file:
         for line in file:
             line = line.split(',')
-            p.append((float(line[0]), float(line[1]), float(line[2])))
-            l.append(int(line[3]))
-    return p, l
+            pi.append((float(line[0]), float(line[1]), float(line[2])))
+            li.append(int(line[3]))
+    return pi, li
 
 
 if __name__ == '__main__':
     ks = [1, 3, 5, 7, 9]
     lps = [1, 2, -1]
-    points, labels = read_date('./data/haberman.data')
+    points, labels = read_date('haberman.data')
     for k in ks:
         for li in lps:
             correct = 0
