@@ -21,7 +21,7 @@ def create_data_list(name) -> (list, list):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    data, labels = create_data_list('/home/bravo8234/Desktop/study/Machine_learning/ex3/winnow_vectors.txt')
+    data, labels = create_data_list('/home/bravo8234/Desktop/study/Machine_learning/Ex3/winnow_vectors.txt')
     algo = Winnow(len(data[0]))
     algo(data, labels)
 

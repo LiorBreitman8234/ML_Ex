@@ -302,7 +302,7 @@ def read_data(file_name):
     :return: points, labels
     """
 
-    data_folder = Path("C:/Users/netan/PycharmProjects/ML_Ex/ex3/data/")
+    data_folder = Path("/Ex3/data/")
     file_to_open = data_folder / file_name
 
     points = []
@@ -332,7 +332,7 @@ def write_to_file(file_name, rules, alphas):
     :return:
     """
 
-    data_folder = Path("C:/Users/netan/PycharmProjects/ML_Ex/ex3/data/")
+    data_folder = Path("/Ex3/data/")
     file_to_open = data_folder / f'{file_name}_output.txt'
 
     global POINTS, LABELS
@@ -353,7 +353,7 @@ def write_logs(file_name, log):
     :return:
     """
 
-    data_folder = Path("C:/Users/netan/PycharmProjects/ML_Ex/ex3/")
+    data_folder = Path("/Ex3/")
     file_to_open = data_folder / f'{file_name}_logs.txt'
 
     with open(file_to_open, 'w') as data:
