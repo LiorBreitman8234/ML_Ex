@@ -122,7 +122,8 @@ def write_to_file(file_name: str, data: str):
 if __name__ == '__main__':
     ks = [1, 3, 5, 7, 9]
     lps = [1, 2, -1]
-    points, labels = read_date('haberman.data')
+    data_name = 'haberman.data'
+    points, labels = read_date(data_name)
     res = "Summary of results for haberman.data with 100 runs for k in [1, 3, 5, 7, 9] and lp in [1, 2, INF]:\n"
     logs = 'Output of KNN.py\n\n|    k    |     li     |     iteration     |      correct train      |      correct test      |\n\n'
     time_took = time.time()
@@ -154,5 +155,5 @@ if __name__ == '__main__':
 
     time_took = time.time() - time_took
     print(f"it took {time_took // 60} minutes and {round(time_took % 60, 2)} seconds")
-    write_to_file('logs.txt', logs)
-    write_to_file('results.txt', res)
+    write_to_file(f'logs{data_name.split(".")[0].capitalize()}.txt', logs)
+    write_to_file(f'results{data_name.split(".")[0].capitalize()}.txt', res)
