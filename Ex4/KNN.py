@@ -136,6 +136,7 @@ if __name__ == '__main__':
                 train_data, train_labels, test_data, test_labels = split_data(points, labels)
                 epsilon_net, net_labels = build_net(train_data, train_labels, li)
                 correct_test, correct_train = 0, 0
+
                 for j in range(len(train_data)):
                     pred = knn(li, k, train_data[j], epsilon_net, net_labels)
                     if pred == train_labels[j]:
