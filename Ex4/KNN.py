@@ -148,10 +148,11 @@ if __name__ == '__main__':
                 logs += f'   k = {k},    li = {li_},      iteration = {i},       correct train = {correct_train},       correct test = {correct_test}\n'
                 empirical_error.append(correct_train / len(train_data))
                 test_error.append(correct_test / len(test_data))
-            average_emp = np.mean(empirical_error)
-            average_test = np.mean(test_error)
-            print(f"for {k} neighbours and {li_} type distance we got {round(1 - average_emp, 5)} empirical error and {round(1 - average_test, 5)} test error")
-            res += f"for {k} neighbours and {li_} type distance we got {round(1 - average_emp, 5)} empirical error and {round(1 - average_test, 5)} test error\n"
+
+            average_emp = round(1 - np.mean(empirical_error), 5)
+            average_test = round(1 - np.mean(test_error), 5)
+            print(f"For {k} neighbours and {li_} type distance we got {average_emp} empirical error and {average_test} test error, the difference is {round(abs(average_emp - average_test), 5)}.")
+            res += f"For {k} neighbours and {li_} type distance we got {average_emp} empirical error and {average_test} test error, the difference is {round(abs(average_emp - average_test), 5)}.\n"
 
     time_took = time.time() - time_took
     print(f"it took {time_took // 60} minutes and {round(time_took % 60, 2)} seconds")
