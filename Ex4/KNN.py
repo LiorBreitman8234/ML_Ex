@@ -64,8 +64,14 @@ def knn(type_distance: int, k: int, p: (float, float, float), points: [(float, f
     :return: label of p
     """
     distances = [(lp_dist(type_distance,p,points[i]),labels[i]) for i in range(len(points))]
-
-    return np.bincount(np.array(distances).argsort()[:k]).argmax()
+    distances.sort()
+    count_1,count_2 = 0,0
+    for pair in distances[:k]:
+        if pair[1] == 1:
+            count_1 +=1 
+        else:
+             count_2+=1
+    return 1 if count_1>count_2 else 2
 
 
 # reads ./data/haberman.data and returns a list of points and a list of labels
@@ -100,19 +106,18 @@ if __name__ == '__main__':
                 epsilon_net,net_labels = build_net(train_data,train_labels,li)
                 correct_test,correct_train = 0,0
                 for j in range(len(train_data)):
-                    pred = knn(li,k,train_data[j],epsilon_net)
+                    pred = knn(li,k,train_data[j],epsilon_net,net_labels)
                     if pred == train_labels[j]:
                         correct_train += 1
                 for j in range(len(test_data)):
-                    pred = knn(li,k,test_data[j],epsilon_net)
+                    pred = knn(li,k,test_data[j],epsilon_net,net_labels)
                     if pred == test_labels[j]:
                         correct_test += 1
-                print(f"correct in train: {correct_train}, not correct: {len(train_data) - correct_train}")
-                print(f"correct in test: {correct_test}, not correct: {len(test_data) - correct_test}")
+                
                 empirical_error.append(correct_train/len(train_data))
                 test_error.append(correct_test/len(test_data))        
             average_emp = np.mean(empirical_error)
             average_test = np.mean(test_error)
-            print(f"for {k} neighbours and {li} type distance we got {round(average_emp,5)} empirical error and {round(average_test,5)} test error")
-            results.write(f"for {k} neighbours and {li} type distance we got {round(average_emp,5)} empirical error and {round(average_test,5)} test error\n")
+            print(f"for {k} neighbours and {li} type distance we got {1-round(average_emp,5)} empirical error and {1-round(average_test,5)} test error")
+            results.write(f"for {k} neighbours and {li} type distance we got {1-round(average_emp,5)} empirical error and {1-round(average_test,5)} test error\n")
     results.close()
