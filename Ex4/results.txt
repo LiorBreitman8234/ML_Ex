@@ -1,0 +1,16 @@
+Summary of results for haberman.data with 100 runs for k in [1, 3, 5, 7, 9] and lp in [1, 2, INF]:
+for 1 neighbours and 1 type distance we got 0.01392 empirical error and 0.68556 test error
+for 1 neighbours and 2 type distance we got 0.01621 empirical error and 0.68797 test error
+for 1 neighbours and -1 type distance we got 0.02575 empirical error and 0.69882 test error
+for 3 neighbours and 1 type distance we got 0.18346 empirical error and 0.71556 test error
+for 3 neighbours and 2 type distance we got 0.17137 empirical error and 0.7130099999999999 test error
+for 3 neighbours and -1 type distance we got 0.17922 empirical error and 0.72418 test error
+for 5 neighbours and 1 type distance we got 0.20484 empirical error and 0.73438 test error
+for 5 neighbours and 2 type distance we got 0.20405 empirical error and 0.73098 test error
+for 5 neighbours and -1 type distance we got 0.20797 empirical error and 0.73739 test error
+for 7 neighbours and 1 type distance we got 0.22065 empirical error and 0.74105 test error
+for 7 neighbours and 2 type distance we got 0.22137 empirical error and 0.7402599999999999 test error
+for 7 neighbours and -1 type distance we got 0.22209 empirical error and 0.74144 test error
+for 9 neighbours and 1 type distance we got 0.22484 empirical error and 0.7429399999999999 test error
+for 9 neighbours and 2 type distance we got 0.22464 empirical error and 0.7447699999999999 test error
+for 9 neighbours and -1 type distance we got 0.23033 empirical error and 0.74 test error
