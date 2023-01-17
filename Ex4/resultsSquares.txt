@@ -1,16 +1,16 @@
-Summary of results for squares.txt with 100 runs for k in [1, 3, 5, 7, 9] and lp in [1, 2, INF]:
-for 1 neighbours and 1 type distance we got 0.007 empirical error and 0.0676 test error
-for 1 neighbours and 2 type distance we got 0.0086 empirical error and 0.067 test error
-for 1 neighbours and INF type distance we got 0.0106 empirical error and 0.0772 test error
-for 3 neighbours and 1 type distance we got 0.0418 empirical error and 0.0758 test error
-for 3 neighbours and 2 type distance we got 0.0482 empirical error and 0.0852 test error
-for 3 neighbours and INF type distance we got 0.0552 empirical error and 0.096 test error
-for 5 neighbours and 1 type distance we got 0.0588 empirical error and 0.0858 test error
-for 5 neighbours and 2 type distance we got 0.0622 empirical error and 0.1012 test error
-for 5 neighbours and INF type distance we got 0.0744 empirical error and 0.1182 test error
-for 7 neighbours and 1 type distance we got 0.085 empirical error and 0.1064 test error
-for 7 neighbours and 2 type distance we got 0.0896 empirical error and 0.12 test error
-for 7 neighbours and INF type distance we got 0.0912 empirical error and 0.1362 test error
-for 9 neighbours and 1 type distance we got 0.106 empirical error and 0.1276 test error
-for 9 neighbours and 2 type distance we got 0.1062 empirical error and 0.1332 test error
-for 9 neighbours and INF type distance we got 0.1046 empirical error and 0.1368 test error
+Summary of results for haberman.data with 100 runs for k in [1, 3, 5, 7, 9] and lp in [1, 2, INF]:
+for 1 neighbours and 1 type distance we got 0.0072 empirical error and 0.075 test error
+for 1 neighbours and 2 type distance we got 0.0094 empirical error and 0.0638 test error
+for 1 neighbours and INF type distance we got 0.0126 empirical error and 0.0742 test error
+for 3 neighbours and 1 type distance we got 0.0368 empirical error and 0.0738 test error
+for 3 neighbours and 2 type distance we got 0.0454 empirical error and 0.0916 test error
+for 3 neighbours and INF type distance we got 0.0586 empirical error and 0.108 test error
+for 5 neighbours and 1 type distance we got 0.0492 empirical error and 0.0768 test error
+for 5 neighbours and 2 type distance we got 0.0634 empirical error and 0.1052 test error
+for 5 neighbours and INF type distance we got 0.0708 empirical error and 0.1076 test error
+for 7 neighbours and 1 type distance we got 0.076 empirical error and 0.1104 test error
+for 7 neighbours and 2 type distance we got 0.0914 empirical error and 0.1272 test error
+for 7 neighbours and INF type distance we got 0.0912 empirical error and 0.1328 test error
+for 9 neighbours and 1 type distance we got 0.0966 empirical error and 0.1384 test error
+for 9 neighbours and 2 type distance we got 0.1056 empirical error and 0.1302 test error
+for 9 neighbours and INF type distance we got 0.1036 empirical error and 0.1412 test error
