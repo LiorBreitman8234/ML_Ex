@@ -1,16 +1,16 @@
 Summary of results for haberman.data with 100 runs for k in [1, 3, 5, 7, 9] and lp in [1, 2, INF]:
-for 1 neighbours and 1 type distance we got 0.01621 empirical error and 0.31804 test error
-for 1 neighbours and 2 type distance we got 0.01536 empirical error and 0.31281 test error
-for 1 neighbours and INF type distance we got 0.02209 empirical error and 0.30124 test error
-for 3 neighbours and 1 type distance we got 0.17993 empirical error and 0.28484 test error
-for 3 neighbours and 2 type distance we got 0.16752 empirical error and 0.29412 test error
-for 3 neighbours and INF type distance we got 0.18026 empirical error and 0.27268 test error
-for 5 neighbours and 1 type distance we got 0.20333 empirical error and 0.26961 test error
-for 5 neighbours and 2 type distance we got 0.20052 empirical error and 0.27418 test error
-for 5 neighbours and INF type distance we got 0.20359 empirical error and 0.26654 test error
-for 7 neighbours and 1 type distance we got 0.21843 empirical error and 0.2598 test error
-for 7 neighbours and 2 type distance we got 0.21791 empirical error and 0.26301 test error
-for 7 neighbours and INF type distance we got 0.21928 empirical error and 0.25784 test error
-for 9 neighbours and 1 type distance we got 0.22373 empirical error and 0.2585 test error
-for 9 neighbours and 2 type distance we got 0.2215 empirical error and 0.25438 test error
-for 9 neighbours and INF type distance we got 0.22464 empirical error and 0.25516 test error
+For 1 neighbours and 1 type distance we got 0.01418 empirical error and 0.31124 test error, the difference is 0.29706.
+For 1 neighbours and 2 type distance we got 0.01516 empirical error and 0.31268 test error, the difference is 0.29752.
+For 1 neighbours and INF type distance we got 0.02837 empirical error and 0.29843 test error, the difference is 0.27006.
+For 3 neighbours and 1 type distance we got 0.18444 empirical error and 0.27765 test error, the difference is 0.09321.
+For 3 neighbours and 2 type distance we got 0.17105 empirical error and 0.29209 test error, the difference is 0.12104.
+For 3 neighbours and INF type distance we got 0.18288 empirical error and 0.27275 test error, the difference is 0.08987.
+For 5 neighbours and 1 type distance we got 0.21209 empirical error and 0.26673 test error, the difference is 0.05464.
+For 5 neighbours and 2 type distance we got 0.20359 empirical error and 0.27634 test error, the difference is 0.07275.
+For 5 neighbours and INF type distance we got 0.21222 empirical error and 0.26366 test error, the difference is 0.05144.
+For 7 neighbours and 1 type distance we got 0.2215 empirical error and 0.25908 test error, the difference is 0.03758.
+For 7 neighbours and 2 type distance we got 0.21928 empirical error and 0.25895 test error, the difference is 0.03967.
+For 7 neighbours and INF type distance we got 0.22026 empirical error and 0.26059 test error, the difference is 0.04033.
+For 9 neighbours and 1 type distance we got 0.22856 empirical error and 0.25693 test error, the difference is 0.02837.
+For 9 neighbours and 2 type distance we got 0.22124 empirical error and 0.25699 test error, the difference is 0.03575.
+For 9 neighbours and INF type distance we got 0.22608 empirical error and 0.25967 test error, the difference is 0.03359.
